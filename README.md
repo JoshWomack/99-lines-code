@@ -1,4 +1,4 @@
-# Objectives
+# Part 1 - Objectives
 Create an array called friends. It will hold five of your friends' names.
 
 For every friend in the friend array, you will want to console.log the descending chorus of this brand-new, never before seen song 100 times. The lyric must include your friend's name, and must be grammatically correct when we get down to 1. See the example output for more information.
@@ -37,3 +37,24 @@ loop runs for every line of the song.
 
 ## Submission
 As usual, make sure you save and then commit and push your work to GitHub.
+
+# Part 2 - Objectives
+
+* Put a button in the HTML that says Sing!
+    * Stepping Stone: When you click the button, all the console.log statements from yesterday should happen. They SHOULD NOT happen before the button is clicked.
+* When you have the button setup and working correctly as described, then:
+    * Delete the div with class friend and the headings and paragraphs it contains from your html file
+    * Go to your code where you are "singing the song" and accomplish the following using DOM:
+        * For every one of your friends, create a div with class friend
+        * Put an h3 containing your friend's name in the div
+        * Then, instead of using console.log to put the song lyrics in the console, create a paragraph for each song lyric line and put that paragraph in the friend div.
+* To Recap:
+    * When you have made these modifications, the page should start out just showing a button labeled "Sing!"
+    * Nothing will be logged to the console
+    * Clicking the button will cause 5 div elements with class name friend to be added to the page, one for each of your friends
+    * Each div contains a friend's name as an h3 and 99 paragraphs, each one representing a lyric line that you previously were logging to the console in part 1 of this lab.
+## Hints
+* You will be using DOM functions to complete this portion of the lab
+* Remember that elements can be added to other elements
+* document.body.appendChild(someElement);
+* someOtherElement.appendChild(anotherElement);
